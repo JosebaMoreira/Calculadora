@@ -1,8 +1,16 @@
 package principal;
 import menu.Menu;
 import operaciones.Operaciones;
-
+/**
+ * Esta clase proporciona una interfaz para realizar operaciones matemáticas
+ * simples como suma, resta, multiplicación, división y resto. Utiliza un menú
+ * para solicitar la entrada del usuario y permite repetir las operaciones según la elección del usuario.
+ */
 public class Calculadora{
+	/**
+	 * Método principal que inicia la aplicación de la calculadora. 
+	 * @param args los argumentos de línea de comandos
+	 */
     public static void main(String[] args) {   
         int resultado = 0;
         String operacion = "";
@@ -31,7 +39,7 @@ public class Calculadora{
                 resultado = operaciones.resto(operandos[0], operandos[1]);
                 System.out.println ("Resultado: " + resultado);
             } else {
-                System.out.println ("Operaci�n no v�lida");
+                System.out.println ("Operaci�n no v�lida");
             }
         }   while (menu.repetir());
     }
